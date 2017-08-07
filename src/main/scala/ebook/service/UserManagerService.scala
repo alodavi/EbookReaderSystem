@@ -1,10 +1,11 @@
 package ebook.service
 
+import ebook.domain.models.{User, UserManager}
+
 /**
   * Created by aloisia.davi on 07.08.17.
   */
-trait UserManagerService[User]{
-  def users: Map[Int, User]
+trait UserManagerService extends UserManager{
 
   def addUser(id:Int, details:String, accountType:Int):User
 

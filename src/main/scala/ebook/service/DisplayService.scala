@@ -1,9 +1,11 @@
 package ebook.service
 
+import ebook.domain.models.{Book, Display, User}
+
 /**
   * Created by aloisia.davi on 07.08.17.
   */
-trait DisplayService[Book, User, Int]{
+trait DisplayService extends Display{
 
   def displayBook(book: Book):Unit
 
