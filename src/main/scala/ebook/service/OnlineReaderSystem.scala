@@ -1,17 +1,11 @@
 package ebook.service
 
-import ebook.domain.models.{Book, Display, Library, User}
+import ebook.domain.models._
 
 /**
   * Created by aloisia.davi on 07.08.17.
   */
 trait OnlineReaderSystem {
-
-  def library: Library
-
-  //todo add usermanager case class
-
-  def display:Display
 
   def activeBook: Book
 
@@ -19,7 +13,7 @@ trait OnlineReaderSystem {
 
   def getLibrary: Library
 
-  //getUserManager
+  def getUserManager: UserManager
 
   def getDisplay: Display
 
