@@ -22,7 +22,7 @@ trait UserManagerService extends UserManager{
    Try(UserManager(filteredUsers.get))
   }
 
-  def remove(user: User)(implicit userManager: UserManager):Try[UserManager] = removeById(user.id)
+  def remove(user: User)(implicit userManager: UserManager):Try[UserManager] = removeById(user.usedId)
 
   def renewMembership(account: Account, date: Timestamp):Try[Account] = Try(account.copy(dateOfRenewal = Some(date)))
 
