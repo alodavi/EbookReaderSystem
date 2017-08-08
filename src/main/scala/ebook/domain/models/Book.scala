@@ -8,5 +8,5 @@ package ebook.domain.models
 case class Book(
                id: Int,
                details:String,
-               page: Int
+               page: Int = 0
                )

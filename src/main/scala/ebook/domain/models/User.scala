@@ -5,6 +5,6 @@ package ebook.domain.models
   */
 
 case class User(
-               id: Int,
-               details: String
+               usedId: Int,
+               userDetails: String
                )
