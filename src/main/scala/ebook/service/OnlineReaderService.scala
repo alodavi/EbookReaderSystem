@@ -1,21 +1,10 @@
 package ebook.service
 
+import ebook.domain.models.OnlineReader
+
 /**
   * Created by aloisia.davi on 07.08.17.
   */
-trait OnlineReaderService {
-//
-//  def activeBook: Book
-//
-//  def activeUser:User
-//
-//  def getLibrary: Library
-//
-//  def getUserManager: UserManager
-//
-//  def getDisplay: Display
+trait OnlineReaderService extends OnlineReader with LibraryService with DisplayService
 
-
-}
-
-//object OnlineReader extends OnlineReader
+object OnlineReaderService extends OnlineReaderService

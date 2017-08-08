@@ -17,3 +17,5 @@ trait UserManagerService extends UserManager{
 
   def renewMembership:Unit
 }
+
+//object UserManagerService extends UserManagerService //todo after implementing

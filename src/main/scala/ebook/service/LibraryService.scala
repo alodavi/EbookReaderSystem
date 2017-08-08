@@ -5,7 +5,7 @@ import ebook.domain.models.{Book, Library}
 /**
   * Created by aloisia.davi on 07.08.17.
   */
-trait LibraryService {
+trait LibraryService extends Library{
 
   def addBoook(id:Int, details:String)(implicit library: Library): Option[Book] ={
     if(!library.books.contains(id)) Some(Book(id, details, page = 0)) else None
@@ -20,3 +20,5 @@ trait LibraryService {
 
   def find(id:Int)(implicit library: Library):Option[Book] = library.books.get(id)
 }
+
+object LibraryService extends LibraryService
