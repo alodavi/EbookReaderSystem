@@ -8,7 +8,7 @@ import ebook.service.DisplayService
   */
 object PrintUserAndBook extends App{
   val commonUser = User(1, "I like science fiction and fantasy!")
-  val commonBook = Book(3, "A Masterpiece!")
+  val commonBook = Book(3, "A Masterpiece!", 50)
   DisplayService.displayUser(commonUser)
   DisplayService.displayBook(commonBook)
 }

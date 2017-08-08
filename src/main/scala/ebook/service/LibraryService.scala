@@ -7,8 +7,8 @@ import ebook.domain.models.{Book, Library}
   */
 trait LibraryService extends BookService{
 
-  def addBoook(id:Int, details:String)(implicit library: Library): Option[Book] ={
-    if(!library.books.contains(id)) Some(Book(id, details)) else None
+  def addBoook(id:Int, details:String, page:Int)(implicit library: Library): Option[Book] ={
+    if(!library.books.contains(id)) Some(Book(id, details, page)) else None
   }
 
   def removeById(id: Int)(implicit library: Library):Library={
