@@ -5,7 +5,7 @@ import ebook.domain.models.Book
 /**
   * Created by aloisia.davi on 08.08.17.
   */
-trait BookService extends Book{
+trait BookService {
 
   def turnPageForward(book: Book):Book = {
     val newPage = book.page + 1

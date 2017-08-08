@@ -5,7 +5,7 @@ import ebook.domain.models.{Book, Library, User}
 /**
   * Created by aloisia.davi on 07.08.17.
   */
-trait DisplayService extends User with BookService{
+trait DisplayService extends BookService{
 
   def displayBook(book: Book):Unit ={
     println("id="+book.id)
