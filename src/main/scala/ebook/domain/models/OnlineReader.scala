@@ -6,7 +6,5 @@ package ebook.domain.models
 class OnlineReader(
                     userManager: UserManager,
                     library: Library,
-                    display: Display,
-                    activeBook: Book,
-                    activeUser: User
+                    display: Display
                     )

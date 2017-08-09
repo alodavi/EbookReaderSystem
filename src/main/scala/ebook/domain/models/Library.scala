@@ -6,5 +6,5 @@ package ebook.domain.models
 
 
 case class Library(
-                  books: Map[Int, Book]
+                  books: Option[Map[Int, Book]]
                   )

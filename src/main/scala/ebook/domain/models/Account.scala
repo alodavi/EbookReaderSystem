@@ -10,6 +10,8 @@ case class Account (
                   accountNo: String,
                   accountDetails:String,
                   accountType: Int,
+                  user: User,
+                  library: Library,
                   dateOfCreation: Timestamp,
                   dateOfRenewal: Option[Timestamp],
                   dateOfEnding:Option[Timestamp]
